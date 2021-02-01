@@ -1,3 +1,8 @@
+<!--Har knappt kört någon debugging men vet att jag kan göra det i webbläsaren genom f12 och sötta breakpoints och begära komandon och se-->
+<!--Om värden tas in och implementeras i HTML koden och tas bort, etz etz.. Dock fungerar inte min CSS fil-->
+<!-- Har använt mig utav din JS kod för att lösa probelemt och förklarat hur den funkar, vill du att jag kompleterar med en egen lösning säg till. Men förstår logiken.-->
+<!-- Får inte inläggen att splitta sig i egna rutor utan det går helt bananas hur jag en skriver min CSS i HTML.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +11,27 @@
     <title><BookBlog></title>
     <link rel="stylesheet" href=css/style.css">
 </head>
-<body style="background-image: url(img/Books.jpg); background-size: auto; background-repeat: no-repeat;">
-<header style="background-color: rgba(0, 0, 0, 0.336)" class="flx-row">
-    <div>
+<body style="background-image: url(img/Books.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<header class="flx-row" style="background-color: rgba(0, 0, 0, 0.336)">
+    <div style="padding: 0.1in;">
         <h1 style="color: whitesmoke; text-align: center;">Blogg Time</h1>
     </div>
-    <div style="text-align: center;">
+    <div class="flx-col" style="text-align: center;">
         <label style="color: whitesmoke; padding: 0.5in;" for="input-number">Numbers of posts</label>
-        <input style="background-color: rgb(255, 219, 101); color: rgb(49, 0, 83);";" id="input-number" type="number" placeholder="0">
+        <input style="background-color: rgb(255, 219, 101); text-align: center; color: rgb(0, 0, 0) ";" id="input-number" type="number" placeholder="0">
         <div id=container>
-
         </div>
     </div>
+    </header>
+    <main style="margin: 0.1in auto; max-width: 4in; min-width: 3in; max-height: 4in; padding: auto; box-shadow: 5px 10px 8px rgba(255, 10, 2, 0.884); background-color: rgb(255, 219, 101); color: rgb(0, 0, 0);">
+        <template>
+            <section>
+                <h4>Title</h4>
+                <p>Let's creat</p>
+            </section>
+        </template>
+    </main>
     <footer style="color: whitesmoke; background-color: rgba(0, 0, 0, 0.336); position: fixed; bottom: 0%; width: 100%; text-align: center;">Contact: Marcus.Backholm@live.se if there is any issues.</footer>
 </body>
-<script src="js/script.js"></script>
+<script src="js/script.js"></script> <!-- Referering till JS koden.-->
 </html>
