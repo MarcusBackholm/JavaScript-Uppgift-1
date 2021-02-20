@@ -15,16 +15,16 @@ function makeSections(count){
     var parent = document.querySelector("main"); // returnerar element 
     var child = document.createElement("section"); // skapar en instans för specifik element tag.
     var title = document.createElement("h4"); // skapar en instans för specifik element tag.
-    var blurb = document.createElement("p"); // skapar en instans för specifik element tag.
+    var text = document.createElement("p"); // skapar en instans för specifik element tag.
 
     title.innerText = "Blogg " + i; // Ökar titel text med 1 för varje nytt inlägg.
-    blurb.innerText = `Type some...`; // Standard värde i rutan för inlägg.
+    text.innerText = `Type some...`; // Standard värde i rutan för inlägg.
 
     makeEditable(title);
-    makeEditable(blurb);
+    makeEditable( text);
 
     child.append(title);
-    child.append(blurb);
+    child.append(text);
     parent.append(child);
   }
 }
