@@ -1,0 +1,49 @@
+body {
+    background-image: url(/img/Books.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.flx-row {
+    background-color: rgba(139, 139, 139, 0.247);
+}
+
+.headerText, h1 {
+    padding: 0.1in;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.input-number-posts {
+    text-align: center;
+    color: whitesmoke;
+    padding: 0.5in;
+}
+
+#input-number {
+    background-color: rgb(255, 219, 101);
+    text-align: center; color: rgb(0, 0, 0);
+}
+
+main {
+    margin: auto;
+    max-width: 4in;
+    min-width: 3in;
+    padding: auto;
+    box-shadow: 5px 10px 8px rgba(255, 10, 2, 0.884);
+    background-color: rgb(255, 219, 101); 
+    color: rgb(0, 0, 0);
+}
+
+section{
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed; 
+    bottom: 0%; 
+    width: 100%; 
+    text-align: center;
+}
